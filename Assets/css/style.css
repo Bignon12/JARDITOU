@@ -1,0 +1,41 @@
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.entete {
+    display: flex;
+}
+.entete2 {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.box {
+    width: 50%;
+}
+
+a {
+    color: aliceblue;
+}
+.box2 {
+    width: 100%;
+    
+}   
+.global {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+section {
+    width: 70%;
+    height: auto;
+    justify-content: start;
+}
+.droite {
+    width: 30%;
+    height: auto;
+    background-color:grey ;
+}
