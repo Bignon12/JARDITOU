@@ -2,80 +2,82 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
     <title>Page Jarditou</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 <body>
-    <img src="jarditou_logo.jpg" title="Logo jarditou">
-    <p>La qualité depuis 70 ans</p>
-    <ul>
-      <li><a href="index.html" title="cliquez ici">Accueil</a></li> 
-      <li><a href="tableau.html" title="cliquez ici">Tableau</a></li>
-      <li><a href="contact.html" title="cliquez ici">Contact</a></li> 
-    </ul>
-    <p><img src="promotion.jpg" title="image entête"></p>
-    <table>
-        <caption>Tableau</caption>
-        <thead>
-            <tr>
-                <th>Photo</th>
-                <th>ID</th>
-                <th>Catégorie</th>
-                <th>Libellé</th>
-                <th>Prix</th>
-                <th>Couleur</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="img/7.jpg" alt="7.jpg" title="Image narbécue" width="100" height="100"></td>
-                <td>7</td>
-                <td>Barbécues</td>
-                <td>Aramis</td>
-                <td>110.00€</td>
-                <td>brun</td>
-            </tr>
-            <tr>
-                <td><img src="img/8.jpg" alt="8.jpg" title="image barbécue" width="100" height="100"></td>
-                <td>8</td>
-                <td>Barbécuies</td>
-                <td>Athos</td>
-                <td>249.99€</td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td><img src="img/11.jpg" alt="11.jpg" title="image barbécue" width="100" height="100"></td>
-                <td>11</td>
-                <td>Barbécues</td>
-                <td>Clatronic</td>
-                <td>135.90€</td>
-                <td>chrome</td>
-            </tr>
-            <tr>
-                <td><img src="img/7.jpg" alt="12.jpg" title="image barbécue" width="100" height="100"></td>
-                <td>12</td>
-                <td>Barbécues</td>
-                <td>Camping</td>
-                <td>88.00€</td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td><img src="img/13.jpg" alt="13.jpg" title="image d'une brouette" width="100" height="100"></td>
-                <td>13</td>
-                <td>Brouette</td>
-                <td>Green</td>
-                <td>49.00€</td>
-                <td>Verte</td>
-            </tr>
-        </tbody>
+    <header class="entete">
+        <div class="box"><img src="Assets/img/jarditou_logo.jpg" title="Logo jarditou" alt="logo jarditou" width="250px"></div>
+        <div class="box"><span>Tout le jardin</span></div>
+    </header>
+    <nav class="entete2">
+            <a href="index.html" title="cliquez ici">Accueil</a>
+            <a href="tableau.html" title="cliquez ici">Tableau</a>
+            <a href="contact.html" title="cliquez ici">Formulaire</a>
+    </nav>
+        <a href="#"><img class="box2" src="Assets/img/promotion.jpg" title="image entete" alt="image entete"></a>
+    <section>
+        <table>
+            <caption><h1>Tableau</h1></caption>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>ID</th>
+                    <th>Catégorie</th>
+                    <th>Libellé</th>
+                    <th>Prix</th>
+                    <th>Couleur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="Assets/img/7.jpg" alt="barbecue aramis" title="barbecue aramis" width="100" height="100"></td>
+                    <td>7</td>
+                    <td>Barbécues</td>
+                    <td>Aramis</td>
+                    <td>110.00€</td>
+                    <td>brun</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/img/8.jpg" alt="barbecue athos" title="barbecue athos" width="100" height="100"></td>
+                    <td>8</td>
+                    <td>Barbécues</td>
+                    <td>Athos</td>
+                    <td>249.99€</td>
+                    <td>Noir</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/img/11.jpg" alt="barbecue clatronic" title="barbecue clatronic" width="100" height="100"></td>
+                    <td>11</td>
+                    <td>Barbécues</td>
+                    <td>Clatronic</td>
+                    <td>135.90€</td>
+                    <td>chrome</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/img/7.jpg" alt="barbecue camping" title="barbécue camping" width="100" height="100"></td>
+                    <td>12</td>
+                    <td>Barbécues</td>
+                    <td>Camping</td>
+                    <td>88.00€</td>
+                    <td>Noir</td>
+                </tr>
+                <tr>
+                    <td><img src="Assets/img/13.jpg" alt="brouette" title="brouette" width="100" height="100"></td>
+                    <td>13</td>
+                    <td>Brouette</td>
+                    <td>Green</td>
+                    <td>49.00€</td>
+                    <td>Verte</td>
+                </tr>
+            </tbody>
         </table>
-       <footer>
-            <ul>
-            <li><a href="page2.html" title="cliquez ici">Mentions légales</a></li>
-            <li><a href="page2.html" title="cliquez ici">Horaires</a></li>
-            <li><a href="page2.html" title="cliquez ici">Plan de site</a></li>
-            </ul>
-        </footer>
-    </body>
+    </section>
+    <footer class="entete2">
+        <a href="#" title="cliquez ici">Mentions légales</a></li>
+        <a href="#" title="cliquez ici">Horaires</a></li>
+        <a href="#" title="cliquez ici">Plan de site</a></li>
+    </footer>
+</body>
 </html>

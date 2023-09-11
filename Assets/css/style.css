@@ -5,6 +5,7 @@
 
 .entete {
     display: flex;
+    align-items: center;
 }
 .entete2 {
     display: flex;
@@ -15,13 +16,25 @@
 
 .box {
     width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
+
+
+span {
+    
+    font-size: 2em;
+
+} 
 
 a {
     color: aliceblue;
 }
 .box2 {
     width: 100%;
+    height: 300px;
     
 }   
 .global {
@@ -30,12 +43,39 @@ a {
     display: flex;
 }
 section {
-    width: 70%;
+    width: auto;
     height: auto;
     justify-content: start;
+    font-size: 14;
+    background-color: rgb(151, 158, 177);
+    font-family: 'Trebuchet MS' sans-serif, sans-serif;
 }
 .droite {
     width: 30%;
     height: auto;
     background-color:grey ;
+
+
+}
+@media screen and (max-width: 768px)
+{
+    h1, h2 {
+       font-style: italic; 
+    }
+
+    aside {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    html {
+        font-size: 75%;
+    }
+
+    .entete2 {
+        flex-direction: column;
+    }
 }
