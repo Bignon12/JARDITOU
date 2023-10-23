@@ -3,15 +3,32 @@
     height: auto;
 }
 
+a:hover{
+    color: blueviolet;
+}
+
 .entete {
     display: flex;
     align-items: center;
+    border: 2px solid;
+    padding: 1em;
+    background-color: darkgrey;
 }
-.entete2 {
+.navbar {
     display: flex;
     background-color: black;
     justify-content: space-around;
     padding: 1%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 10rem;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 500ms;
+    transition-timing-function: ease-out;
+}
+.navbar:hover{
+    background-color: darkred;
 }
 
 .box {
@@ -21,7 +38,11 @@
     justify-content: space-evenly;
     
 }
+.custom-size{
+    height: 50px;
+    width: 300px;
 
+}
 
 span {
     
@@ -31,31 +52,43 @@ span {
 
 a {
     color: aliceblue;
+    text-decoration: none;
 }
+
 .box2 {
     width: 100%;
-    height: 300px;
-    
-}   
+    height: auto; */
+    /* background-image: url('Assets/img/promotion.jpg'); 
+    background-size: cover;
+    transition: background-image 0.3s;  */
+  }
+  
+  /* .box2:hover {
+    background-image: url('Assets/img/fleur1.jpg'); 
+    background-size: cover;
+  } */
+
 .global {
     width: 100%;
     height: auto;
     display: flex;
+    margin-top: 1em;;
 }
 section {
     width: auto;
     height: auto;
     justify-content: start;
     font-size: 14;
-    background-color: rgb(151, 158, 177);
     font-family: 'Trebuchet MS' sans-serif, sans-serif;
 }
 .droite {
-    width: 30%;
+    width: 50%;
     height: auto;
     background-color:grey ;
+}
 
-
+body {
+    background-image: url('Assets/img/fleur1.jpg') ;
 }
 @media screen and (max-width: 768px)
 {
