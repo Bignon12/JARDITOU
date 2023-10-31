@@ -16,7 +16,7 @@ a:hover{
 }
 .navbar {
     display: flex;
-    background-color: black;
+    background-color: blue;
     justify-content: space-around;
     padding: 1%;
     margin-bottom: 2em;
@@ -26,6 +26,7 @@ a:hover{
     position: relative;
     transition: background-color 500ms;
     transition-timing-function: ease-out;
+    
 }
 .navbar:hover{
     background-color: darkred;
@@ -38,11 +39,11 @@ a:hover{
     justify-content: space-evenly;
     
 }
-.custom-size{
+/* .custom-size{
     height: 50px;
-    width: 300px;
+    width: 300px; */
 
-}
+
 
 span {
     
@@ -88,7 +89,7 @@ section {
 }
 
 body {
-    background-image: url('Assets/img/fleur1.jpg') ;
+    background-color: blueviolet;
 }
 @media screen and (max-width: 768px)
 {

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
     <title>Formulaire Jarditou</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Assets/css/style.css">
+
 </head>
 
-body>
-    <div class="container col-12" >
+
+<body>
+    <div class="container" >
 
     <header>
         <div class="d-flex justify-content-between">
@@ -19,7 +20,7 @@ body>
         </div>
     </header>
   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Jarditou.com</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,26 +38,29 @@ body>
                 <a href="contact.html" class="nav-link">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Votre promotion" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Rechercher</button>
-            </form>
           </div>
         </div>
       </nav>
-    <img class=" col-12" src="Assets/img/promotion.jpg" title="image entete" alt="image entete">
-
-    <section>
+      <div class="container-fluid">
+    <img src="Assets/img/promotion.jpg" title="image entete" alt="image entete" class="img-fluid">
+    </div>
+    <div class="container">
         <p style="font-size: 2rem; color: red;">*Ces zones sont obligatoires</p>
         <h2>Vos Coordonnées</h2>
         <form class=" ">            
           <div class="form-group">
               <label for="nom" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px;">Nom*</label>
               <input type="text" class="form-control" id="nom">
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes1">
+                <strong>Ce champ est obligatoire!</strong>
+              </div>
           </div>
           <div class="form-group">
               <label for="prenom" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">Prénoms*</label>
               <input type="text" class="form-control custom-size" id="prenom">
+              <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes2">
+                <strong>Ce champ est obligatoire!</strong>
+              </div>
           </div>
           <div class="form-group">
               <label for="sexe" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">sexe*</label>
@@ -73,23 +77,38 @@ body>
           </div>
           <div class="form-group">
             <label for="datedenaissance" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">Date de naissance*</label>
-            <input type="date" class="form-control w-50" id="ddn">
+            <input type="date" class="form-control" id="ddn">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes3">
+              <strong>Ce champ est obligatoire!</strong>
+            </div>
           </div>
           <div class="form-group">
             <label for="codepostal" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">Code Postal*</label>
             <input type="text" class="form-control" id="cp">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes4">
+              <strong>Ce champ est obligatoire!</strong>
+            </div>
           </div>
           <div class="form-group">
             <label for="adresse" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">Adresse</label>
             <input type="text" class="form-control" id="adresse">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes5">
+              <strong>Ce champ est obligatoire!</strong>
+            </div>
           </div>
           <div class="form-group">
             <label for="ville" style="font-family: 'Trebuchet MS', sans-serif; font-size: 25px">Ville</label>
             <input type="text" class="form-control" id="vil">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes6">
+              <strong>Ce champ est obligatoire!</strong>
+            </div>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1" style="font-family: 'Trebuchet MS', sans-serif; font-size: 30px"class="form-label">Email*</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dave.loper@afpa.fr">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="mes7">
+              <strong>Ce champ est obligatoire!</strong>
+            </div>
           </div>
         </form>
         <h2>Votre demande</h2>
@@ -117,9 +136,10 @@ body>
             </label>
           </div>
    
-        <button type="submit" class="btn btn-dark btn-lg">Envoyer</button>
+        <button type="submit" id="btn" class="btn btn-dark btn-lg">Envoyer</button>
         <button type="reset" class="btn btn-dark btn-lg">Refuser</button>
       </form>
+    </div>
     <footer class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid border border-secondary bg-dark">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -138,5 +158,8 @@ body>
             </div>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="Assets/js/jquery.js"></script>
 </body>
 </html>
